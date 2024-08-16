@@ -1,0 +1,64 @@
+/* src/components/Helpline.css */
+
+.helpline-modal {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the modal horizontally */
+  width: 90%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a maximum width for larger screens */
+}
+
+.helpline-item {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px; /* Adjust padding for better spacing */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.helpline-item:hover {
+  background-color: #fafafa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.helpline-item:not(:last-child) {
+  margin-bottom: 20px; /* Space between helpline items */
+}
+
+.helpline-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px; /* Margin for spacing between image and text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.helpline-content {
+  flex: 1;
+}
+
+.helpline-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px; /* Space below the title */
+  color: #333;
+}
+
+.helpline-phone,
+.helpline-email {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px; /* Space below phone and email */
+}
+
+.helpline-quote {
+  font-style: italic;
+  margin-top: 10px; /* Space above the quote */
+  color: #777;
+}

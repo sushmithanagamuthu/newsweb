@@ -1,0 +1,110 @@
+.news-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.news-item {
+  width: 100%;
+  max-width: 450px; /* Ensure it doesn't exceed a certain width */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 60px; /* Increase bottom padding to show footer contents */
+  position: relative; /* For absolute positioning of footer elements */
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.news-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center; /* Center-align the heading text */
+}
+
+.news-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center; /* Center-align the description text */
+}
+
+.news-detailed-review {
+  margin-top: 10px;
+  color: #555;
+  text-align: center; /* Center-align the detailed review text */
+}
+
+.read-more-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the button */
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  font-size: 12px;
+  color: #888;
+  position: absolute; /* Position it at the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: #f8f8f8; /* Optional: match background color for better appearance */
+}
+
+.news-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likes, .shares {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-symbol, .share-symbol {
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .news-item {
+    width: 100%;
+    max-width: none;
+  }
+}

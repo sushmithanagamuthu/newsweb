@@ -1,0 +1,84 @@
+/* Basic styling for the login page */
+.login-container {
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 40px;
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; /* Center horizontally */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh; /* Full viewport height */
+  transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 28px; /* Larger font size */
+  color: #003366; /* Dark blue */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased margin */
+  width: 100%; /* Ensure full width */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin */
+  font-size: 18px; /* Larger font size */
+  color: #003366; /* Dark blue */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border: 1px solid #003366; /* Dark blue border */
+  border-radius: 8px; /* More rounded corners */
+  font-size: 18px; /* Larger font size */
+  color: #333;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  background-color: #003366; /* Dark blue background */
+  color: white;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  margin-top: 15px; /* Increased margin */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #002244; /* Darker blue */
+  transform: scale(1.05); /* Add scale effect */
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #003366; /* Dark blue */
+  text-decoration: none;
+  font-size: 16px; /* Larger font size */
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Additional effects */
+.login-container:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,40 @@
+.criminal-grid {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 24px; /* Increased gap for more space between items */
+  padding: 20px; /* Added padding for the grid */
+  background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+.news-item {
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Slightly more rounded corners */
+  overflow: hidden;
+  flex: 0 0 300px; /* Fixed width for uniform size */
+  background: #fff; /* Background color for better contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth transform effect */
+}
+
+.news-item:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.news-image {
+  width: 100%;
+  height: 60%; /* Fixed height for image */
+  object-fit: cover; /* Ensure image covers the area */
+}
+
+.news-headline {
+  padding: 16px;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 1.2em; /* Slightly smaller font size */
+  font-weight: bold;
+  flex-grow: 1; /* Allow headline to take up remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text vertically */
+  color: #333; /* Darker text color for readability */
+}

@@ -1,0 +1,23 @@
+.vertical-navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3f51b5; /* Blue background */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+.vertical-navbar .MuiListItem-root {
+    padding: 15px 20px;
+}
+
+.vertical-navbar .MuiListItemIcon-root {
+    color: #ffffff; /* White icon color for better contrast */
+}
+
+.vertical-navbar .MuiListItemText-root {
+    font-weight: bold; /* Bold text */
+    color: #ffffff;    /* White text color for better contrast */
+}
